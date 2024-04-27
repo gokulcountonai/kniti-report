@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- main.css -->
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: 0px;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Dashboard</a>
+      </li>
+
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="main2.html" class="nav-link">My Machine</a>
+      </li>
+
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="month.html" class="nav-link">Month</a>
+      </li>
+
+
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="day.html" class="nav-link">Day</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="roll.html" class="nav-link">Roll</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 30cm Lycra / PZ01
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 30cm Needle Line / PZ05
+            <span class="float-right text-muted text-sm">30 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 30cm Double Yarn / PZ08
+            <span class="float-right text-muted text-sm">2 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="margin-left: 0px;">
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Roll Report</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Daily Report v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+              <!-- Main content -->
+              <div class="invoice p-3 mb-3">
+                <!-- title row -->
+                <div class="row">
+                  <div class="col-12">
+                    <h4>
+                      <i class="fas fa-globe"></i> PZ01
+                      <small class="float-right">Month: Apirl</small>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <h4>
+                      <small class="float-right">Time: 6AM-6AM</small>
+                    </h4>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- info row -->
+                <div class="row invoice-info">
+                  <div class="col-sm-4 invoice-col">
+                    Machine no : <strong> 1</strong><br>
+                    Roll no: <strong> 1</strong><br>
+                    
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4 invoice-col">
+                    
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4 invoice-col">
+                    
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+  
+                <!-- Table row -->
+                <div class="row">
+                  <div class="col-12 table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                      <tr>
+                        <th>S.no</th>
+                        <th>Defect_name</th>
+                        <th>Revolutions </th>
+                        <th>timestamp</th>
+                        <th>Continues defect</th>
+                        <th>Grade</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>lycra</td>
+                        <td>316</td>
+                        <td>2024-03-01 01:11</td>
+                        <td>6</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>twoply</td>
+                        <td>317</td>
+                        <td>2024-03-01 01:11</td>
+                        <td>5</td>
+                        <td><span class="badge badge-warning">Grade 2</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>shutoff</td>
+                        <td>319</td>
+                        <td>2024-03-01 01:11</td>
+                        <td>2</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>twoply</td>
+                        <td>321</td>
+                        <td>2024-03-01 01:11</td>
+                        <td>6</td>
+                        <td><span class="badge badge-danger">Grade 3</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>lycra</td>
+                        <td>321</td>
+                        <td>2024-03-01 01:11</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>hole</td>
+                        <td>736</td>
+                        <td>2024-03-01 01:32</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>shutoff</td>
+                        <td>861</td>
+                        <td>2024-03-01 01:41</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>shutoff</td>
+                        <td>1273</td>
+                        <td>2024-03-01 02:15</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>needln</td>
+                        <td>1283</td>
+                        <td>2024-03-01 02:15</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>needln</td>
+                        <td>1290</td>
+                        <td>2024-03-01 02:17</td>
+                        <td>6</td>
+                        <td><span class="badge badge-danger">Grade 3</span></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>needln</td>
+                        <td>1300</td>
+                        <td>2024-03-01 02:22</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>shutoff</td>
+                        <td>1412</td>
+                        <td>2024-03-01 02:50</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>twoply</td>
+                        <td>1413</td>
+                        <td>2024-03-01 02:50</td>
+                        <td>2</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>lycra</td>
+                        <td>1415</td>
+                        <td>2024-03-01 02:50</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>lycra</td>
+                        <td>1488</td>
+                        <td>2024-03-01 01;11</td>
+                        <td>6</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>shutoff</td>
+                        <td>1489</td>
+                        <td>2024-03-01 02:56</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>twoply</td>
+                        <td>1493</td>
+                        <td>2024-03-01 02:56</td>
+                        <td>7</td>
+                        <td><span class="badge badge-danger">Grade 3</span></td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>twoply</td>
+                        <td>1499</td>
+                        <td>2024-03-01 02:57</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>shutoff</td>
+                        <td>1524</td>
+                        <td>2024-03-01 03:03</td>
+                        <td>1</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>shutoff</td>
+                        <td>1832</td>
+                        <td>2024-03-01 03:26</td>
+                        <td>5</td>
+                        <td><span class="badge badge-success">Grade 1</span></td>
+                      </tr>
+                      
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
+                <!-- /.row -->
+  
+                <!-- this row will not appear when printing -->
+                <div class="row no-print">
+                  <div class="col-12">
+                    <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+                    <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
+                      <i class="fas fa-download"></i> Generate PDF
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- /.invoice -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer" style="margin-left: 0px;">
+    <strong>Copyright &copy; 2024 <a href="https://kniti.ai">count.ai</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>

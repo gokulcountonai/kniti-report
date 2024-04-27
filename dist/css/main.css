@@ -1,0 +1,34 @@
+.info-box {
+    min-height: 185px;
+}
+
+
+.machine-box-allign {
+    border: 2px solid #17a2b8;
+    border-radius: 5px;
+    margin: 2px;
+      margin-top: 2px;
+    padding: 2px;
+    margin-top: 35px;
+}
+
+.allign-center {
+    text-align: center;
+}
+
+.machine-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.running{
+    border-bottom: 5px solid green;
+}
+
+.not-running{
+    border-bottom: 5px solid red;
+}
+
+.black-text {
+    color: black;
+}
